@@ -1,0 +1,44 @@
+&CONTROL
+  calculation = 'bands'
+  prefix = 'silicene'
+  pseudo_dir = '/home/meyn/q-e-qe-7.1/pseudo/'
+  outdir = './tmp/'
+  verbosity = 'high'
+  wf_collect = .true.
+/
+
+&SYSTEM
+  ibrav = 0
+  nat = 2
+  ntyp = 1
+  nosym = .false.
+  occupations = 'smearing'
+  smearing = 'cold'
+  degauss = 1.4699723600d-02
+  ecutrho = 2.4000000000d+02
+  ecutwfc = 7.0000000000d+01
+/
+
+&ELECTRONS
+  conv_thr = 1.0d-8
+/
+
+ATOMIC_SPECIES
+Si  28.0855 Si.pbe-n-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+Si           0.9983404670       0.0016595330       0.0000000000
+Si           0.3316595330       0.6683404670       0.0000000000
+
+CELL_PARAMETERS angstrom
+ 1.9509758780     -3.3792809950    -0.000000000
+ 1.9509758780      3.3792809950     0.000000000
+-0.0000000000      0.0000000000     11.9993216670 
+
+K_POINTS crystal_b
+4
+# Γ—M—K—Γ
+ 0.0000000000     0.0000000000     0.0000000000     70  !Γ
+ 0.0000000000     0.5000000000     0.0000000000     40  !M
+ 0.3333333333     0.3333333333     0.0000000000     70  !K
+ 0.0000000000     0.0000000000     0.0000000000     0   !Γ

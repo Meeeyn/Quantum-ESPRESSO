@@ -1,0 +1,48 @@
+ &CONTROL
+   calculation     =  'scf'
+   etot_conv_thr   =  2e-5
+   forc_conv_thr   =  0.0001
+   outdir          =  './tmp/'
+   prefix          =  'silicene'
+   pseudo_dir      =  '/home/meyn/q-e-qe-7.1/pseudo/'
+   tprnfor         =  .true.
+   tstress         =  .true.
+   verbosity       =  'high'
+ /
+
+ &SYSTEM
+   degauss         =  0.0146997236
+   ecutrho         =  240.0
+   ecutwfc         =  30.0
+   ibrav           =  0
+   nat             =  2
+   nosym           =  .false.
+   ntyp            =  1
+   occupations     =  'smearing'
+   smearing        =  'cold'
+ /
+
+ &ELECTRONS
+   conv_thr        =  4e-10
+   electron_maxstep =  80
+   mixing_beta     =  0.4
+ /
+
+ATOMIC_SPECIES 
+  Si    28.0855   Si.pbe-n-rrkjus_psl.1.0.0.UPF 
+
+
+CELL_PARAMETERS angstrom
+    1.9250000000000000  -3.3109999999999999   0.0000000000000000
+    1.9250000000000000   3.3109999999999999   0.0000000000000000
+    0.0000000000000000   0.0000000000000000  12.0000000000000000
+
+ATOMIC_POSITIONS crystal
+  Si       0.000000000000   0.000000000000   0.000000000000
+  Si       0.330000000000   0.670000000000   0.000000000000
+
+K_POINTS automatic
+  12   12   1   0   0   0 
+
+
+

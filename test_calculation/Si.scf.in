@@ -1,0 +1,31 @@
+&CONTROL
+prefix = 'silicon',
+outdir = './tmp/'
+pseudo_dir = '/home/meyn/q-e-qe-7.1/pseudo/'
+verbosity = 'high'
+/
+
+&SYSTEM
+ibrav = 2,
+celldm(1) = 10.26,
+nat = 2,
+ntyp = 1,
+ecutwfc = 30
+nbnd = 8
+/
+
+&ELECTRONS
+mixing_beta = 0.6
+/
+
+
+ATOMIC_SPECIES
+Si 28.0855 Si.pz-vbc.UPF
+
+ATOMIC_POSITIONS (alat)
+Si 0.00 0.00 0.00 0 0 0
+Si 0.25 0.25 0.25 0 0 0
+
+K_POINTS (automatic)
+6 6 6 0 0 0
+

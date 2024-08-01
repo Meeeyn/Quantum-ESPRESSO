@@ -1,0 +1,59 @@
+
+     Program epsilon v.6.4.1 starts on  9Feb2024 at 23:47:34 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+
+
+     Reading input file...
+     Broadcasting variables...
+     Reading PW restart file...
+
+     Reading data from directory:
+     ./tmp/silicon.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PZ ( 1  1  0  0 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         583     583    241                 9257     9257    2421
+
+
+
+     Fermi energy [eV] is:  0.00000
+     The system is a dielectric...
+     metalling system: redefining wmin =     0.000000
+
+     Performing eps calculation...
+
+     xx,yy,zz plasmon frequences [eV] are:    19.878691097   19.878680989   19.878667998
+
+     Writing output on file...
+
+
+     eps          :      0.18s CPU      0.18s WALL (       1 calls)
+     dipole_calc  :      0.11s CPU      0.12s WALL (     216 calls)
+
+
+     epsilon      :      0.45s CPU      0.94s WALL
+
+
+   This run was terminated on:  23:47:35   9Feb2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

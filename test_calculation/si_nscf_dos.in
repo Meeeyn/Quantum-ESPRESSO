@@ -1,0 +1,33 @@
+&CONTROL
+calculation = 'nscf',
+restart_mode = 'from_scratch',
+prefix = 'silicon',
+outdir = './tmp/'
+pseudo_dir = '/home/meyn/q-e-qe-7.1/pseudo/'
+verbosity = 'high'
+/
+
+&SYSTEM
+ibrav = 2,
+celldm(1) = 10.2015,
+nat = 2,
+ntyp = 1,
+ecutwfc = 50,
+nbnd = 8,
+occupations='tetrahedra'
+nosym = .TRUE.
+/
+
+&ELECTRONS
+conv_thr = 1e-8,
+/
+
+ATOMIC_SPECIES
+Si 28.086 Si.pz-vbc.UPF
+
+ATOMIC_POSITIONS (alat)
+Si -0.000000000 -0.000000000 0.000000000
+Si 0.250037478 0.250037478 0.250037478
+
+K_POINTS (automatic)
+12 12 12 0 0 0

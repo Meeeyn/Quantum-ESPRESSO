@@ -1,0 +1,6 @@
+&DOS
+  prefix='silicene',
+  outdir='./tmp/',
+  fildos='silicene_dos.dat'
+/
+

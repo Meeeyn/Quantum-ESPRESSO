@@ -1,0 +1,16 @@
+load_fromPWI silicene_scf.in
+
+set fid [open etot-vs-kpoint.dat w]
+
+foreach k { 2 4 6 8 10 12 } {
+
+    set name silicene_scf_kpoints-$k
+
+    K_POINTS automatic "$k $k 1 0 0 0"
+    runPW $name.in
+
+    set Etot [::pwtk::pwo::totene $name.out]
+    puts $fid "$k $Etot"
+}
+
+close $fid

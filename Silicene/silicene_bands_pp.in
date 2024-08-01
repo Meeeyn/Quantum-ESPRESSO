@@ -1,0 +1,5 @@
+&BANDS
+  prefix = 'silicene'
+  outdir = './tmp/'
+  filband = 'silicene_bands.dat'
+/

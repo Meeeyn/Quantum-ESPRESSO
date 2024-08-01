@@ -1,0 +1,29 @@
+&CONTROL
+calculation = 'scf',
+prefix = 'silicon',
+outdir = './tmp/'
+pseudo_dir = '/home/meyn/q-e-qe-7.1/pseudo/'
+verbosity = 'high'
+/
+
+&SYSTEM
+ibrav =  2,
+celldm(1) = 10.2015,
+nat =  2,
+ntyp = 1,
+ecutwfc = 30,
+nbnd = 8
+/
+
+&ELECTRONS
+/
+
+ATOMIC_SPECIES
+Si 28.086 Si.pz-vbc.UPF
+
+ATOMIC_POSITIONS (alat)
+Si -0.000000000 -0.000000000 0.000000000
+Si 0.250037478 0.250037478 0.250037478
+
+K_POINTS (automatic)
+6 6 6 1 1 1 
